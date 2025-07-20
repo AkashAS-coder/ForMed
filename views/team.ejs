@@ -1,0 +1,17 @@
+<% layout('layout', { title: 'Our Team', active: 'team' }) %>
+<section class="team">
+  <div class="container">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+      <% team.forEach(member => { %>
+        <div class="team-member-card">
+          <img src="<%= member.photo %>" alt="<%= member.name %>" class="team-member-photo" />
+          <div class="team-member-name"><%= member.name %></div>
+          <div class="team-member-role"><%= member.role %></div>
+          <div class="team-member-bio"><%= member.bio %></div>
+          <a href="/team/<%= member.id %>" class="view-profile-btn">View Profile</a>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section> 

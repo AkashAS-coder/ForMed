@@ -1,0 +1,21 @@
+<% layout('layout', { title: 'Career Assessment', active: 'survey' }) %>
+<section class="survey">
+  <div class="container">
+    <h2>Healthcare Career Assessment</h2>
+    <p class="survey-intro">This comprehensive 40-question assessment will help identify the healthcare career path that best matches your interests, skills, and personality traits.</p>
+    <div class="survey-container">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+        <span class="progress-text">Question <span id="current-question">1</span> of 40</span>
+      </div>
+      <div id="survey-form" class="survey-form">
+        <!-- Questions will be dynamically loaded here -->
+      </div>
+      <div class="survey-navigation">
+        <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
+        <button id="next-btn" class="btn btn-primary">Next</button>
+        <button id="submit-btn" class="btn btn-success" style="display: none;">Get Results</button>
+      </div>
+    </div>
+  </div>
+</section> 
